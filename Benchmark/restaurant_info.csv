@@ -1,0 +1,4 @@
+restaurant_id,latitude,longitude,dispatch_radius,customer_radius,wait_time
+Ghim Moh Market & Food Centre,1.31099663218896,103.78823030662,5,5,120
+Bukit Timah Market & Food Centre,1.33945242854685,103.776007306701,5,5,120
+Alexandra Village Food Centre,1.28630594274136,103.804492637648,5,5,120

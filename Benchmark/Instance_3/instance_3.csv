@@ -1,0 +1,47 @@
+order_id,demand,creation_time,committed_completion_time,load_time,unload_time,pickup_id,delivery_id
+06042300000,1,06:04:23,06:49:23,60,60,Ghim Moh Market & Food Centre,288408 Singapore
+06080500001,1,06:08:05,06:53:05,60,60,Ghim Moh Market & Food Centre,597158 Singapore
+06083900002,1,06:08:39,06:53:39,60,60,Bukit Timah Market & Food Centre,679409 Singapore
+06094400003,1,06:09:44,06:54:44,60,60,Bukit Timah Market & Food Centre,678087 Singapore
+06095000004,1,06:09:50,06:54:50,60,60,Ghim Moh Market & Food Centre,140023 Singapore
+06101000005,1,06:10:10,06:55:10,60,60,Alexandra Village Food Centre,129960 Singapore
+06123400006,1,06:12:34,06:57:34,60,60,Bukit Timah Market & Food Centre,589484 Singapore
+06125700007,1,06:12:57,06:57:57,60,60,Bukit Timah Market & Food Centre,652194 Singapore
+06140600008,1,06:14:06,06:59:06,60,60,Ghim Moh Market & Food Centre,277504 Singapore
+06144700009,1,06:14:47,06:59:47,60,60,Alexandra Village Food Centre,140064 Singapore
+06145100010,1,06:14:51,06:59:51,60,60,Ghim Moh Market & Food Centre,599506 Singapore
+06173000011,1,06:17:30,07:02:30,60,60,Alexandra Village Food Centre,140021 Singapore
+06185100012,1,06:18:51,07:03:51,60,60,Alexandra Village Food Centre,141094 Singapore
+06201300013,1,06:20:13,07:05:13,60,60,Alexandra Village Food Centre,159545 Singapore
+06214300014,1,06:21:43,07:06:43,60,60,Bukit Timah Market & Food Centre,598728 Singapore
+06215600015,1,06:21:56,07:06:56,60,60,Alexandra Village Food Centre,138686 Singapore
+06222800016,1,06:22:28,07:07:28,60,60,Alexandra Village Food Centre,117687 Singapore
+06225800017,1,06:22:58,07:07:58,60,60,Ghim Moh Market & Food Centre,140094 Singapore
+06231100018,1,06:23:11,07:08:11,60,60,Ghim Moh Market & Food Centre,288408 Singapore
+06291400019,1,06:29:14,07:14:14,60,60,Ghim Moh Market & Food Centre,267612 Singapore
+06293700020,1,06:29:37,07:14:37,60,60,Alexandra Village Food Centre,266744 Singapore
+06390700021,1,06:39:07,07:24:07,60,60,Bukit Timah Market & Food Centre,266224 Singapore
+06413800022,1,06:41:38,07:26:38,60,60,Alexandra Village Food Centre,149457 Singapore
+06414300023,1,06:41:43,07:26:43,60,60,Alexandra Village Food Centre,117425 Singapore
+06430400024,1,06:43:04,07:28:04,60,60,Bukit Timah Market & Food Centre,272018 Singapore
+06433100025,1,06:43:31,07:28:31,60,60,Bukit Timah Market & Food Centre,287534 Singapore
+06450700026,1,06:45:07,07:30:07,60,60,Alexandra Village Food Centre,158749 Singapore
+06453700027,1,06:45:37,07:30:37,60,60,Bukit Timah Market & Food Centre,589652 Singapore
+06453800028,1,06:45:38,07:30:38,60,60,Bukit Timah Market & Food Centre,651293 Singapore
+06461500029,1,06:46:15,07:31:15,60,60,Ghim Moh Market & Food Centre,129960 Singapore
+06464900030,1,06:46:49,07:31:49,60,60,Bukit Timah Market & Food Centre,258828 Singapore
+06474900031,1,06:47:49,07:32:49,60,60,Bukit Timah Market & Food Centre,270013 Singapore
+06482100032,1,06:48:21,07:33:21,60,60,Ghim Moh Market & Food Centre,592001 Singapore
+06483400033,1,06:48:34,07:33:34,60,60,Alexandra Village Food Centre,277054 Singapore
+06493500034,1,06:49:35,07:34:35,60,60,Alexandra Village Food Centre,270001 Singapore
+06494500035,1,06:49:45,07:34:45,60,60,Bukit Timah Market & Food Centre,271031 Singapore
+06504700036,1,06:50:47,07:35:47,60,60,Ghim Moh Market & Food Centre,120708 Singapore
+06511100037,1,06:51:11,07:36:11,60,60,Bukit Timah Market & Food Centre,650542 Singapore
+06542100038,1,06:54:21,07:39:21,60,60,Alexandra Village Food Centre,267612 Singapore
+06550800039,1,06:55:08,07:40:08,60,60,Bukit Timah Market & Food Centre,587977 Singapore
+06555800040,1,06:55:58,07:40:58,60,60,Alexandra Village Food Centre,140081 Singapore
+06560600041,1,06:56:06,07:41:06,60,60,Ghim Moh Market & Food Centre,276308 Singapore
+06570700042,1,06:57:07,07:42:07,60,60,Alexandra Village Food Centre,149740 Singapore
+06582500043,1,06:58:25,07:43:25,60,60,Bukit Timah Market & Food Centre,669605 Singapore
+06585200044,1,06:58:52,07:43:52,60,60,Bukit Timah Market & Food Centre,299709 Singapore
+06594900045,1,06:59:49,07:44:49,60,60,Alexandra Village Food Centre,150118 Singapore
