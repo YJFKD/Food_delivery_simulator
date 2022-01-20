@@ -1,0 +1,252 @@
+[
+    {
+        "id": "D_1",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_1",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [
+            "06585200044"
+        ],
+        "destination": {
+            "location_id": "299709 Singapore",
+            "delivery_order_list": [
+                "06585200044"
+            ],
+            "pickup_order_list": [],
+            "arrive_time": 1642640420.0,
+            "leave_time": 1642640480.0
+        }
+    },
+    {
+        "id": "D_2",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_2",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_3",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_3",
+        "update_time": 1642640400.0,
+        "current_location_id": "Ghim Moh Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_4",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_4",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_5",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_5",
+        "update_time": 1642640400.0,
+        "current_location_id": "266744 Singapore",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_6",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_6",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_7",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_7",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_8",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_8",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_9",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_9",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_10",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_10",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_11",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_11",
+        "update_time": 1642640400.0,
+        "current_location_id": "141094 Singapore",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_12",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_12",
+        "update_time": 1642640400.0,
+        "current_location_id": "Ghim Moh Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_13",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_13",
+        "update_time": 1642640400.0,
+        "current_location_id": "Alexandra Village Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_14",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_14",
+        "update_time": 1642640400.0,
+        "current_location_id": "Ghim Moh Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_15",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_15",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_16",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_16",
+        "update_time": 1642640400.0,
+        "current_location_id": "Ghim Moh Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_17",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_17",
+        "update_time": 1642640400.0,
+        "current_location_id": "Ghim Moh Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_18",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_18",
+        "update_time": 1642640400.0,
+        "current_location_id": "Alexandra Village Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_19",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_19",
+        "update_time": 1642640400.0,
+        "current_location_id": "Bukit Timah Market & Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    },
+    {
+        "id": "D_20",
+        "operation_time": 24,
+        "capacity": 10,
+        "gps_id": "G_20",
+        "update_time": 1642640400.0,
+        "current_location_id": "Alexandra Village Food Centre",
+        "arrive_time_at_current_location": 0,
+        "leave_time_at_current_location": 0,
+        "carrying_orders": [],
+        "destination": null
+    }
+]
