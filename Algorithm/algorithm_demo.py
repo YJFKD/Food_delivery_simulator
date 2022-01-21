@@ -81,57 +81,20 @@ def dispatch_orders_to_drivers(id_to_unallocated_order: dict, id_to_driver: dict
             
     # dispatch unallocated orders to drivers (nearest driver)
     driver_id_to_left_capacity = __get_left_capacity_of_driver(id_to_driver)
-    available_drivers = [driver for driver_id, driver in id_to_driver.items() if driver_id_to_left_capacity[driver_id] > 0] 
-    
     for order_id, order in id_to_unallocated_order.items():
-        # check order is pre matching or not
+        # calculate the available drivers
+        available_driver_ids = [driver_id for driver_id, driver in id_to_driver.items() if driver_id_to_left_capacity[driver_id] > 0] 
         if order_id in pre_matching_order_ids:
             continue
-        
-        # find the nearest driver
-        order_driver_distance_dict = {}
-        for driver_id, driver in id_to_driver.items():
-            if driver in available_drivers:
-                pickup_location_id = order.pickup_location_id
-                driver_location_id = driver.current_location_id
-
-
-                # # add
-                # if driver_location_id == "":
-                #     driver_location = driver.current_coordinate
-                #     pickup_location = id_to_location.get(pickup_location_id)
-                #     order_driver_distance = hs.haversine((pickup_location.lat, pickup_location.lng),
-                #                                          (driver_location[0], driver_location[1]))
-                # else:
-
-                #     pickup_location = id_to_location.get(pickup_location_id)
-                #     driver_location = id_to_location.get(driver_location_id)
-                #     order_driver_distance = hs.haversine((pickup_location.lat, pickup_location.lng),
-                #                                          (driver_location.lat, driver_location.lng))
-
-
-                pickup_location = id_to_location.get(pickup_location_id)
-                driver_location = id_to_location.get(driver_location_id)
-                order_driver_distance = hs.haversine((pickup_location.lat, pickup_location.lng),
-                                                     (driver_location.lat, driver_location.lng))
-
-                order_driver_distance_dict[driver_id] = order_driver_distance
-        min_distance = min(order_driver_distance_dict.values())
-        min_driver_id = [driver_id for driver_id in order_driver_distance_dict 
-                            if order_driver_distance_dict[driver_id] == min_distance]
-        
-        # if exist multiple nearest drivers
-        if len(min_driver_id) >= 1:
-            assign_driver_id = min_driver_id[0]
-        else:
-            assign_driver_id = min_driver_id
-        
-        # pickup node & delivery node list
         pickup_node_list, delivery_node_list = __create_pickup_and_delivery_nodes_of_orders([order], id_to_location)
+        if pickup_node_list == [] or delivery_node_list == []:
+            continue
+        assign_driver_id = max(driver_id_to_left_capacity, key=driver_id_to_left_capacity.get)
+        assign_driver = id_to_driver.get(assign_driver_id)
+        driver_id_to_planned_route[assign_driver.id].extend(pickup_node_list)
+        driver_id_to_planned_route[assign_driver.id].extend(delivery_node_list)
+        driver_id_to_left_capacity[assign_driver_id] -= 1
         
-        # update driver planned route
-        driver_id_to_planned_route[assign_driver_id].extend(pickup_node_list)
-        driver_id_to_planned_route[assign_driver_id].extend(delivery_node_list)
         
     # create the output of the dispatch
     for driver_id, driver in id_to_driver.items():
