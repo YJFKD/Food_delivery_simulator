@@ -2,6 +2,7 @@ import datetime
 import os
 import sys
 import time
+from src.utils.json_tools import convert_node_to_json, write_json_to_file
 
 from src.simulator.driver_simulator import DriverSimulator
 from src.simulator.history import History
@@ -96,9 +97,10 @@ class SimulateEnvironment(object):
             # 派单环节, 设计与算法交互
             used_seconds, dispatch_result = self.dispatch(updated_input_info)
             self.time_to_dispatch_result[self.cur_time] = dispatch_result
+            logger.info("Finish the dispatch.")
             
             # 校验, 车辆目的地不能改变
-            if not Checker.check_dispatch_result(dispatch_result, self.id_to_driver, self.id_to_order):
+            if not Checker.check_dispatch_result(dispatch_result, self.id_to_driver, self.id_to_order, self.id_to_location):
                 logger.error("Dispatch result is infeasible")
                 return
             
@@ -122,7 +124,16 @@ class SimulateEnvironment(object):
         logger.info("finished the left ongoing orders")
             
         # 根据self.history 计算指标
-        self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_driver))    
+        self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_driver))   
+        
+        # 输出骑手的历史路线和订单的历史状态
+        write_json_to_file(Configs.algorithm_output_driver_node_history_path, self.history.get_driver_position_history()) 
+        write_json_to_file(Configs.algorithm_output_order_update_history_path, self.history.get_order_status_history()) 
+        
+        # 单独输出订单的历史状态
+        order_update_history = f"{Configs.root_folder_path}/Order_update_history/Instance_"\
+                               f"{len(self.id_to_order)}o_{len(self.id_to_driver)}d_{len(self.id_to_location)}l.json"
+        write_json_to_file(order_update_history, self.history.get_order_status_history()) 
         
     
     def update_input(self):
@@ -235,9 +246,6 @@ class SimulateEnvironment(object):
         if not self.algorithm_calling_command:
             self.algorithm_calling_command = get_algorithm_calling_command()
         time_start_algorithm = time.time()
-
-        # route_map = input_info.route_map # add the route_map object
-
         used_seconds, message = subprocess_function(self.algorithm_calling_command)
 
         # 解析算法输出json文件
@@ -245,8 +253,8 @@ class SimulateEnvironment(object):
             if (time_start_algorithm < os.stat(Configs.algorithm_output_destination_path).st_mtime < time.time()
                     and time_start_algorithm < os.stat(
                         Configs.algorithm_output_planned_route_path).st_mtime < time.time()):
-                driver_id_to_destination, driver_id_to_planned_route = get_output_of_algorithm(self.id_to_order)
-                dispatch_result = DispatchResult(driver_id_to_destination, driver_id_to_planned_route)
+                driver_id_to_destination, driver_id_to_planned_route, driver_id_to_entire_planned_route = get_output_of_algorithm(self.id_to_order)
+                dispatch_result = DispatchResult(driver_id_to_destination, driver_id_to_planned_route, driver_id_to_entire_planned_route)
                 return used_seconds, dispatch_result
             else:
                 logger.error("Output_json files from the algorithm is not the newest.")
